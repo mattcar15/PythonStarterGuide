@@ -24,4 +24,4 @@ if [ ! -f "main.py" ]; then
   # echo "main.py file created."
 fi
 
-cursor .
+code .
