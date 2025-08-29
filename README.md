@@ -102,6 +102,8 @@ Reload your shell config:
 exec $SHELL -l
 ```
 
+*(If you're thinking "Why do I reload it?" you're asking the right questions! Think of it like a Word document you save, but have open somewhere else. Your terminal takes a snapshot of it (literally it runs this file when it starts) so when you change it your terminal is using an old copy, so you need to restart it to get the newly modified copy)*
+
 Install and set a current Python version (example: 3.12.x):
 
 ```bash
