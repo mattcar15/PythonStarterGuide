@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# Create virtual environment if it doesn't exist
+if [ ! -d "venv" ]; then
+  python3 -m venv venv
+  # echo "Virtual environment created."
+fi
+
+# Initialize git repository if it doesn't exist
+if [ ! -d ".git" ]; then
+  git init -q
+  # echo "Git repository initialized."
+fi
+
+# Create .gitignore file if it doesn't exist
+if [ ! -f ".gitignore" ]; then
+  cp /Users/mattcarroll/commands/python_gitignore .gitignore
+  # echo ".gitignore file created."
+fi
+
+# Create main.py file if it doesn't exist
+if [ ! -f "main.py" ]; then
+  touch main.py
+  # echo "main.py file created."
+fi
+
+cursor .
